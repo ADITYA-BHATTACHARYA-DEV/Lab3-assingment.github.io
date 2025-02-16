@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .header {
+            background: linear-gradient(135deg, #0066ff, #00ccff);
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 102, 255, 0.8);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="dark-mode">
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="dark-mode-toggle">
+        <label for="dark-mode-toggle" class="toggle-label">
+            <span class="toggle-icon sun">☀️</span>
+            <span class="toggle-icon moon">🌙</span>
+        </label>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Aditya's Portfolio</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1 id="intro-text"></h1>
+        <p>Creating interactive and futuristic technological solutions.</p>
+        <button class="cta">View Projects</button>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="profile-container">
+            <img src="assets/dp.png" alt="Profile Picture" class="profile-img">
+        </div>
+        <h2>Aditya Bhattacharya</h2>
+        <p>Web Developer | DevSecOps | Tech Enthusiast</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <span>HTML</span>
+            <div class="progress">
+                <div class="progress-bar" style="width: 50%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>CSS</span>
+            <div class="progress">
+                <div class="progress-bar" style="width: 97%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Javascript</span>
+            <div class="progress">
+                <div class="progress-bar" style="width: 74%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Java</span>
+            <div class="progress">
+                <div class="progress-bar" style="width: 74%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Python</span>
+            <div class="progress">
+                <div class="progress-bar" style="width: 74%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Computer Vision</span>
+            <div class="progress">
+                <div class="progress-bar" style="width: 74%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Android Developer</span>
+            <div class="progress">
+                <div class="progress-bar" style="width: 74%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Game Developer</span>
+            <div class="progress">
+                <div class="progress-bar" style="width: 74%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>CGPA</th>
+            </tr>
+            <tr>
+                <td>B.Tech Computer Science & Design</td>
+                <td>RGIPT</td>
+                <td>2023 - Present</td>
+                <td>8.5</td>
+            </tr>
+        </table>
+    </section>
+<br><br>
+    <!-- Projects Section -->
+    <section class="carousel-container">
+        <h2>Projects</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <img src="assets/slide1.png" class="carousel-item">
+                <img src="assets/slide2.png" class="carousel-item">
+            </div>
+            <button id="prev">❮</button>
+            <button id="next">❯</button>
+        </div>
+    </section>
+
+    <!-- Random Quote Generator -->
+    <section id="quote">
+        <h2>Random Quote</h2>
+        <p id="quote-text">Click the button for a quote!</p>
+        <button onclick="generateQuote()">Get Quote</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+        <br>
+        <br>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Aditya Bhattacharya. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
